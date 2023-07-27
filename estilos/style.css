@@ -201,14 +201,14 @@ text-align: center;
 
 /*fondo de todas las paginas*/
 .body-dos{
-  background-image: url(/multimedia/fondo-textura-piedra-granulada-negra-o-fondo-textura-gris-oscuro_553949-1347.avif);
+  background-image: url(../multimedia/fondo-textura-piedra-granulada-negra-o-fondo-textura-gris-oscuro_553949-1347.avif);
   background-size: auto 25%;  
 }
 /*fondo de todas las paginas*/
 
 /*fondo para la pag de "modelos unicos"*/
 .body-tres{
-  background-image: url(/multimedia/fondo-textura-piedra-granulada-negra-o-fondo-textura-gris-oscuro_553949-1347.jpg);
+  background-image: url(../multimedia/fondo-textura-piedra-granulada-negra-o-fondo-textura-gris-oscuro_553949-1347.avif);
   background-size: auto 15%;  
 }
 
