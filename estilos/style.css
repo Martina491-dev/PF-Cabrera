@@ -215,17 +215,24 @@ text-align: center;
 
 
 /*imagenes de alquiler*/
-.carousel-uno{
-  width: 80%;
-  height: 400px;
-  padding-left: 20%;
+.carousel-item img{
+  width: 100%; /* Hace que las imágenes ocupen el 100% del ancho del contenedor */
+  height:80vh; /* Ajusta automáticamente la altura para mantener la proporción */
 }
-.carousel-dos{
-  width: 500px;
-  height: 400px;
-  padding-left: 200px;
-  padding-right: 30px;
+
+.carousel-uno {
+  max-width: 80%;
+  margin: 0 auto; /* Centra horizontalmente el carrusel */
 }
+
+.carousel-inner {
+  display: flex; /* Utiliza Flexbox para alinear las imágenes horizontalmente */
+}
+
+.carousel-item {
+  flex: 0 0 100%; /* Hace que cada imagen ocupe el 100% del ancho del carrusel */
+}
+
 
 /* caja para alquilar auto*/
 
