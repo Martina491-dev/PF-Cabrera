@@ -215,7 +215,17 @@ text-align: center;
 
 
 /*imagenes de alquiler*/
-
+.carousel-uno{
+  width: 80%;
+  height: 400px;
+  padding-left: 20%;
+}
+.carousel-dos{
+  width: 500px;
+  height: 400px;
+  padding-left: 200px;
+  padding-right: 30px;
+}
 
 /* caja para alquilar auto*/
 
