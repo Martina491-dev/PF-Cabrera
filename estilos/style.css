@@ -65,12 +65,13 @@ li {
 
 }
 
-.container-flex{
+/* Estilos para contenedor flexible en pantallas mayores a 576px */
+.container-flex {
   display: flex;
   flex-wrap: wrap;
 }
 
-.item-uno{
+.item-uno {
   width: 50%;
   float: right;
   box-sizing: border-box;
@@ -80,7 +81,21 @@ li {
   width: 100%;
   display: block;  
   margin-top: 30px;
+}
+
+/* Estilos para pantallas con un ancho máximo de 576px o menos */
+@media screen and (max-width: 576px) {
+  /* Cambia el ancho de los elementos para que se muestren en una columna */
+  .container-flex {
+    flex-direction: column;
   }
+
+  .item-uno {
+    width: 100%;
+    padding-right: 0; /* Eliminamos el padding derecho para ocupar todo el ancho disponible */
+  }
+}
+
 
 .text-dos{
   color:black;
@@ -216,24 +231,31 @@ text-align: center;
 
 /*imagenes de alquiler*/
 
-
-.carousel-uno img{
-  width: 100%; /* Hace que las imágenes ocupen el 100% del ancho del contenedor */
-  height:80vh; /* Ajusta automáticamente la altura para mantener la proporción */
+@media screen and (min-width:576px){
+  .img-fluid{
+    width: 100%;
+    height:80vh;
+  }
+  
 }
 
 .carousel-uno {
-  max-width: 80%;
-  margin: 0 auto; /* Centra horizontalmente el carrusel */
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .carousel-inner {
-  display: flex; /* Utiliza Flexbox para alinear las imágenes horizontalmente */
+  display: flex; 
 }
 
 .carousel-item {
-  flex: 0 0 100%; /* Hace que cada imagen ocupe el 100% del ancho del carrusel */
+  flex: 0 0 100%; 
 }
+
+
+
+
+
 
 
 /* caja para alquilar auto*/
