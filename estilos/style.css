@@ -403,12 +403,19 @@ h4{
   margin-bottom: 15px;
 }
 
-.foto{
-  width: 400px;
-  height: 240px;
-  margin-top: 10px;
-  padding-left: 15px;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr); 
+  gap: 10px;
 }
+
+.grid-item img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; /* Ajusta el tamaño de la imagen manteniendo su relación de aspecto */
+}
+
 
 .parrafo-unico{
   margin-top: 10px;
@@ -418,10 +425,34 @@ h4{
 
 /*auto jaguar*/
 .jaguar-grid{
-  width: 100%;
-  height: 100%;
-  display: grid;
-  align-content:center;
+width: 100%;
+height: auto;
+display: grid;
+}
+
+.jaguar-hijo{
+width: 100%;
+height: auto;
+}
+@media screen and (max-width:576px) {
+  .foto{
+    display: block;
+  }
+  
+}
+
+@media  screen and (min-width:576px) {
+  .img-fluid{
+    display: block;
+  }
+  .foto{
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    padding-top:10px;
+  }
+
+  
 }
 
 /*aston*/
@@ -460,7 +491,13 @@ h4{
 }
 
 /*seccion de subasta*/
-
+@media screen and (max-width:576px) {
+  .carousel-img{
+    width: 100%;
+    height: auto;
+  }
+  
+}
 .carousel-img{
   width: 100%;
   height: 100vh;
