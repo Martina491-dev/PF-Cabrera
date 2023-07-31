@@ -64,7 +64,20 @@ li {
   background-color: bisque;
 
 }
+@media screen and (max-width:576px) {
+  .container-flex{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
 
+  .item-uno{
+    object-fit: cover;
+  }
+
+  
+  
+}
 /* Estilos para contenedor flexible en pantallas mayores a 576px */
 .container-flex {
   display: flex;
@@ -82,20 +95,6 @@ li {
   display: block;  
   margin-top: 30px;
 }
-
-/* Estilos para pantallas con un ancho máximo de 576px o menos */
-@media screen and (max-width: 576px) {
-  /* Cambia el ancho de los elementos para que se muestren en una columna */
-  .container-flex {
-    flex-direction: column;
-  }
-
-  .item-uno {
-    width: 100%;
-    padding-right: 0; /* Eliminamos el padding derecho para ocupar todo el ancho disponible */
-  }
-}
-
 
 .text-dos{
   color:black;
