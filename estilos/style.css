@@ -36,7 +36,6 @@ li {
     background-image: url(../multimedia/fondo4.avif);
     background-size: cover;
   }
-  
 .maps{
   margin-top: 50%;
   width: 100%;}
@@ -45,7 +44,6 @@ li {
 @media screen and (min-width:769px) {
   .maps{
     display:none;
-
   }
   
 }
@@ -120,7 +118,7 @@ li {
   background-color: bisque;
 
 }
-@media screen and (max-width:576px) {
+@media screen and (max-width:769px) {
   .img-dos{
     height: auto;
     max-width: 100%;
