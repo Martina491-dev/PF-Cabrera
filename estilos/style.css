@@ -546,11 +546,10 @@ height: auto;
 }
 
 /*aston*/
-.titulo-modelo{
-  margin-top: 20px;
-}
-.fotos-flex{
+.fotos-flex {
+  display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 
