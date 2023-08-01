@@ -31,6 +31,7 @@ li {
   background-repeat: no-repeat;
 }
 
+
 /*estilo de la pagina "venta*/
 
 .titulo-igual {
@@ -45,6 +46,7 @@ li {
 
 .container{
   width: 100%;
+  margin-top: 10px;
 }
 .item{
   clear: both;
@@ -106,10 +108,12 @@ li {
     max-width: 100%;
   } 
 }
-
+.item{
+  max-width: 100%;
+}
 .img-dos{
-max-width: 100%;
-  object-position: center;
+  
+  object-fit: cover;
   
 }
 .text-cuatro{
@@ -143,8 +147,8 @@ padding-left: 10px;
     flex-wrap: wrap;
   max-width: 100%;
   }
+
   .img-tres{
-  
 width: 100%;
     object-fit: cover;
   }
@@ -245,6 +249,16 @@ text-align: center;
   text-decoration: underline;
 }
 
+@media screen and (max-width:576px) {
+  .footer-items li{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-rows: repeat(1, 1fr); 
+    
+  }
+  
+}
+
 /*fondo de todas las paginas*/
 .body-dos{
   background-image: url(../multimedia/fondo-textura-piedra-granulada-negra-o-fondo-textura-gris-oscuro_553949-1347.avif );
@@ -303,18 +317,7 @@ text-align: center;
   width: 90px;
   height: 30px;
 }
-@media screen and (max-width: 576px) {
-  .donde-estas{
-    display: grid;
-    grid-column: span;
-  }
-  .boton-uno{
-    display: grid;
-    
-  }
 
-  
-}
 /*ventajas*/
 
 .ventajas{
@@ -326,8 +329,8 @@ text-align: center;
 
 /*FAQs*/
 .faq-container {
-  max-width: 600px; /* Ajusta el ancho según tus necesidades */
-  margin: 0 auto; /* Centra el cuadro en la página */
+  max-width: 600px; 
+  margin: 0 auto; 
 }
 
 .faq-item {
@@ -337,7 +340,7 @@ text-align: center;
 .question {
   font-size: 20px;
   font-weight: bold;
-  cursor: pointer; /* Cambia el cursor al pasar sobre la pregunta */
+  cursor: pointer; 
 }
 
 .answer {
@@ -351,18 +354,23 @@ text-align: center;
 /*tamaño de las img*/
 
 .foto-nosotros{
-  width: 500px;
-  height: 400px;
+  width: 100%;
+  height:90vh;
 }
 
 .nosotros-uno{
-  width: 300px;
+  width:30vw;
   height: 200px;
 }
-.nosotros-dos{
-  height: 200px;
+@media screen and (max-width:576px) {
+  .nosotros-uno{
+    display: grid;
+    grid-row: auto;
+    margin-top: 10px;
+  width: 100%;
+  }
+  
 }
-
 .cards-container {
   display: flex;
   justify-content: space-between;
@@ -371,9 +379,26 @@ text-align: center;
   padding-bottom: 10px;
 }
 
+@media screen and (max-width:576px) {
+  .cards-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+  }
+
+  .nosotros-flex, .card{
+    max-width: 100%;
+    margin-top: 10px;
+    object-fit: cover;
+  }
+}
 
 
 /*estilo para la pag "sobre nosotros"*/
+
+
 
 .quienes-somos{
   color: black;
@@ -391,6 +416,7 @@ h3{
 }
 
 
+
 /*cuadro de datos para ser parte del staff*/
 
 .datos{
@@ -406,6 +432,15 @@ h3{
 .por-que{
 display: block;
 padding-top: 20px;
+}
+
+@media screen and (max-width:576px) {
+  .datos-uno{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
 }
 
 h4{
@@ -444,7 +479,7 @@ h4{
 .grid-item img {
   width: 100%; 
   height: 100%; 
-  object-fit: cover; /* Ajusta el tamaño de la imagen manteniendo su relación de aspecto */
+  object-fit: cover; 
 }
 
 
@@ -464,12 +499,6 @@ display: grid;
 .jaguar-hijo{
 width: 100%;
 height: auto;
-}
-@media screen and (max-width:576px) {
-  .foto{
-    display: block;
-  }
-  
 }
 
 @media  screen and (min-width:576px) {
@@ -520,15 +549,23 @@ height: auto;
   width: 300px;
   height: 200px;
 }
-
+@media screen and (max-width:576px) {
+  
+  .top-row, .bottom-row{
+    display: grid;
+    grid-template-columns: 1fr;
+  
+  }
+  
+}
 /*seccion de subasta*/
 @media screen and (max-width:576px) {
   .carousel-img{
     width: 100%;
     height: auto;
   }
-  
 }
+
 .carousel-img{
   width: 100%;
   height: 100vh;
