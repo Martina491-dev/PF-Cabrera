@@ -40,7 +40,6 @@ li {
   margin: 0%;
   color: black;
 }
-/*lo hice de esta manera porque no habiamos visto flexbox, no me quise adelantar diseñando*/
 
 /*foto y texto descriptivo de los autos*/
 
@@ -56,6 +55,7 @@ li {
   float: left;
   margin-right: 15px;
   max-width: 100%;
+  
 }
 
 .text-uno{
@@ -74,9 +74,6 @@ li {
   .item-uno{
     object-fit: cover;
   }
-
-  
-  
 }
 /* Estilos para contenedor flexible en pantallas mayores a 576px */
 .container-flex {
@@ -111,16 +108,15 @@ li {
 }
 
 .img-dos{
-  max-width: 100%;
-  display: block;
-  height: 150vh;
+max-width: 100%;
+  object-position: center;
   
 }
 .text-cuatro{
   color: black;
   background-color: bisque;
   margin-top: 10px;
-  width: 50%;
+  width: 100%;
 }
 
 .container-dos{
@@ -138,7 +134,7 @@ li {
 .text-cinco {
 background-color: bisque;
 text-align: center;
-margin-left: 10px;
+padding-left: 10px;
 }
 
 @media screen and (max-width:576px) {
@@ -148,11 +144,12 @@ margin-left: 10px;
   max-width: 100%;
   }
   .img-tres{
-    max-width: 100%;
-    height: auto;
+  
+width: 100%;
+    object-fit: cover;
   }
   .text-cinco{
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
   }
   
@@ -267,9 +264,9 @@ text-align: center;
 
 @media screen and (min-width:576px){
   .img-fluid{
-    width: 80%;
+    width: 100%;
     height:80vh;
-    margin-left: 10%;
+    
   }
   
 }
