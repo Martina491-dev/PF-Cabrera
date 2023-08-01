@@ -31,6 +31,24 @@ li {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width:769px) {
+  .body-uno{
+    background-image: url(../multimedia/fondo4.avif);
+    background-size: cover;
+  }
+  
+.maps{
+  margin-top: 50%;
+  width: 100%;}
+}
+
+@media screen and (min-width:769px) {
+  .maps{
+    display:none;
+
+  }
+  
+}
 
 /*estilo de la pagina "venta*/
 
@@ -111,11 +129,12 @@ li {
 .item{
   max-width: 100%;
 }
-.img-dos{
-  
-  object-fit: cover;
-  
+.img-dos{ 
+  width: 95vw;
+  height: auto;
+  margin-left: 20px;
 }
+
 .text-cuatro{
   color: black;
   background-color: bisque;
@@ -250,13 +269,17 @@ text-align: center;
 }
 
 @media screen and (max-width:576px) {
-  .footer-items li{
-    display: grid;
-    grid-template-columns: repeat(1, 2fr);
-    grid-template-rows: repeat(1, 1fr); 
-    
+  .footer{
+  padding:10px
+     
   }
-  
+  .footer-items{
+    flex-direction: column;
+  }
+  .footer-items img.logo{
+    width: 60px;
+    height: 50px;
+  }
 }
 
 /*fondo de todas las paginas*/
@@ -527,6 +550,9 @@ height: auto;
 /*aston*/
 .titulo-modelo{
   margin-top: 20px;
+}
+.fotos-flex{
+  flex-direction: column;
 }
 
 
