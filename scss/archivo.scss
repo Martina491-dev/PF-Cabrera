@@ -1,4 +1,4 @@
-@import "variables", "header";
+@import "variables", "header", "cards", "footer";
 
   
   /* Fondo del index */
@@ -205,57 +205,6 @@
     opacity: 0.7;
   }
   
-  /* Mismo footer para todas las páginas */
-  .footer {
-    background-color: #f2f2f2;
-    opacity: 0.7;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .footer-items {
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footer-items img.logo {
-    width: 80px;
-    height: 70px;
-  }
-  
-  .footer-items ul.lista-uno {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-items li.lista-dos {
-    display: inline-block;
-    margin: 5px;
-  }
-  
-  .footer-items a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .footer-items a:hover {
-    text-decoration: underline;
-  }
-  
-  @media screen and (max-width: 576px) {
-    .footer {
-      padding: 10px;
-    }
-    .footer-items {
-      flex-direction: column;
-    }
-    .footer-items img.logo {
-      width: 60px;
-      height: 50px;
-    }
-  }
-  
   /* Fondo de todas las páginas */
   .body-dos {
     background-image: url(../multimedia/fondo-textura-piedra-granulada-negra-o-fondo-textura-gris-oscuro_553949-1347.avif);
@@ -359,30 +308,7 @@
     }
   }
   
-  .cards-container {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-  }
-  
-  @media screen and (max-width: 576px) {
-    .cards-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .nosotros-flex,
-    .card {
-      max-width: 100%;
-      margin-top: 10px;
-      object-fit: cover;
-    }
-  }
-  
+
   /* Estilo para la página "sobre nosotros" */
   .quienes-somos {
     color: black;
