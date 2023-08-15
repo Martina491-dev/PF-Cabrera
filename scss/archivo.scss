@@ -1,9 +1,17 @@
 @import "variables", "header", "cards", "footer";
-.titulo-responsive {
+
+
+@media screen and (min-width: 769px) {
+ .titulo-responsive {
     display: none;
+  }
+}
+
   
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 769px) {
+      .titulo-responsive{
       background-color: antiquewhite;
+      opacity: 70%;
       color: black;
     }
   }

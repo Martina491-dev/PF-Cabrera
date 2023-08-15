@@ -110,16 +110,18 @@
     height: 50px;
   }
 }
-.titulo-responsive {
-  display: none;
+@media screen and (min-width: 769px) {
+  .titulo-responsive {
+    display: none;
+  }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 769px) {
   .titulo-responsive {
     background-color: antiquewhite;
+    opacity: 70%;
     color: black;
   }
 }
-
 /* Fondo del index */
 .body-uno {
   background-image: url(https://i.pinimg.com/564x/a1/7d/78/a17d78b0c6ede6bb4b546da674a19f12.jpg);
