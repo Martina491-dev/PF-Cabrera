@@ -44,21 +44,22 @@
   padding-right: 10px;
   padding-bottom: 10px;
 }
-
 @media screen and (max-width: 576px) {
-  .cards-container {
+  .cards-container .cards-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .nosotros-flex,
-  .card {
-    max-width: 100%;
-    margin-top: 10px;
-    object-fit: cover;
-  }
 }
+
+.nosotros-flex,
+.card {
+  max-width: 100%;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
 /* Mismo footer para todas las páginas */
 .footer {
   background-color: #f2f2f2;
