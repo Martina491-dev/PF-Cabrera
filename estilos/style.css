@@ -163,7 +163,7 @@
   background-color: bisque;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 576x) {
   .container-flex {
     display: flex;
     flex-direction: column;
@@ -239,7 +239,7 @@
   padding-left: 10px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
   .container-dos {
     display: flex;
     flex-wrap: wrap;
@@ -518,7 +518,7 @@ h4 {
   display: block;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 650px) {
   .img-fluid {
     display: block;
   }
