@@ -1,5 +1,13 @@
 @import "variables", "header", "cards", "footer";
-
+.titulo-responsive {
+    display: none;
+  
+    @media screen and (max-width: 576px) {
+      background-color: antiquewhite;
+      color: black;
+    }
+  }
+  
   
   /* Fondo del index */
   .body-uno {
