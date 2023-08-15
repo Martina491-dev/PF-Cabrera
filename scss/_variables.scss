@@ -1,0 +1,24 @@
+// Declaración de variables
+$color-fondo: antiquewhite;
+$color-texto: black;
+$tamano-boton: 90px;
+
+
+
+// Cuadro para buscar auto
+.cuadro-auto {
+  background-color: bisque;
+  opacity: 0.9;
+  color: $color-texto;
+  // Resto del estilo...
+  .boton-uno {
+    color: $color-texto;
+    background-color: green;
+    border: none;
+    width: $tamano-boton;
+    height: $tamano-boton;
+    // Resto del estilo...
+  }
+}
+
+// Resto del código...
