@@ -439,6 +439,27 @@ h3 {
   width: 270px;
 }
 
+.card {
+  width: 18rem;
+  overflow:hidden;
+}
+
+
+@media (max-width: 768px) {
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    overflow:hidden;
+  }
+  .card {
+    width: 100%;
+    overflow:hidden;
+  }
+}
+
+
+
 /* Cuadro de datos para ser parte del staff */
 .datos {
   display: block;
