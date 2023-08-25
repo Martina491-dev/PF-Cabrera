@@ -1,508 +1,627 @@
 @import "variables", "header", "cards", "footer";
 
+.cuadro-auto {
+  background-color: bisque;
+  opacity: 0.9;
+  color: black;
 
-@media screen and (min-width: 769px) {
- .titulo-responsive {
-    display: none;
-  }
-}
-
-  
-    @media screen and (max-width: 769px) {
-      .titulo-responsive{
-      background-color: antiquewhite;
-      opacity: 70%;
-      color: black;
-    }
-  }
-  
-  
-  /* Fondo del index */
-  .body-uno {
-    background-image: url(https://i.pinimg.com/564x/a1/7d/78/a17d78b0c6ede6bb4b546da674a19f12.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  @media screen and (max-width: 769px) {
-    .body-uno {
-      background-image: url(../multimedia/fondo4.avif);
-      background-size: cover;
-    }
-    .maps {
-      margin-top: 100%;
-      width: 100%;
-    }
-  }
-  
-  @media screen and (min-width: 769px) {
-    .maps {
-      display: none;
-    }
-  }
-  
-  /* Estilo de la página "venta" */
-  .titulo-igual {
-    text-align: center;
-    background-color: antiquewhite;
-    opacity: 0.6;
-    margin: 0;
-    color: black;
-  }
-  
-  /* Foto y texto descriptivo de los autos */
-  .container {
-    width: 100%;
-    margin-top: 10px;
-  }
-  .item {
-    clear: both;
-    margin-bottom: 15px;
-  }
-  
-  .img {
-    float: left;
-    margin-right: 15px;
-    max-width: 100%;
-  }
-  
-  .text-uno {
-    color: black;
-    font-size: 15px;
-    background-color: bisque;
-  }
-  
-  @media screen and (max-width: 576x) {
-    .container-flex {
-      display: flex;
-      flex-direction: column;
-      max-width: 100%;
-    }
-  
-    .item-uno {
-      object-fit: cover;
-    }
-  }
-  
-  .container-flex {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .item-uno {
-    width: 100%;
-    float: right;
-    box-sizing: border-box;
-    padding-right: 10px;
-  }
-  .img-uno {
-    width: 100%;
-    display: block;
-    margin-top: 30px;
-  }
-  
-  .text-dos {
-    color: black;
-    font-size: 15px;
-    text-align: center;
-    background-color: bisque;
-  }
-  
-  @media screen and (max-width: 769px) {
-    .img-dos {
-      height: auto;
-      max-width: 100%;
-    }
-  }
-  
-  .item {
-    max-width: 100%;
-  }
-  
-  .img-dos {
-    width: 95vw;
-    height: auto;
-    margin-left: 20px;
-  }
-  
-  .text-cuatro {
-    color: black;
-    background-color: bisque;
-    margin-top: 10px;
-    width: 100%;
-  }
-  
-  .container-dos {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .img-tres {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .text-cinco {
-    background-color: bisque;
-    text-align: center;
-    padding-left: 10px;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .container-dos {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 100%;
-    }
-  
-    .img-tres {
-      width: 100%;
-      object-fit: cover;
-    }
-    .text-cinco {
-      max-width: 100%;
-      height: auto;
-    }
-  }
-  
-  .titulo-dos {
-    text-align: center;
-    margin-top: 100px;
-    margin-right: 40%;
-  }
-  
-  /* Cuadro para buscar auto */
-  .cuadro-auto {
-    width: 100%;
-    display: inline-block;
-    color: black;
-    vertical-align: middle;
-    background-color: bisque;
-    opacity: 0.9;
-  }
-  
-  .estado-auto {
-    text-align: center;
-  }
-  
-  .elegi-auto {
-    text-align: center;
-  }
-  
-  /* Mismo h2 para todas las páginas */
-  h2 {
-    color: black;
-    text-align: center;
-    background-color: bisque;
-    opacity: 0.7;
-  }
-  
-  .vende {
-    color: black;
-    margin-top: 20px;
-  }
-  
-  .vende-uno {
-    color: black;
-    text-align: center;
-  }
-  
-  .vendo {
-    color: black;
-    background-color: antiquewhite;
-    opacity: 0.7;
-    text-align: center;
-  }
-  
-  .titulo-venta {
-    background-color: bisque;
-    opacity: 0.7;
-  }
-  
-  /* Fondo de todas las páginas */
-  .body-dos {
-    background-image: url(../multimedia/fondo-textura-piedra-granulada-negra-o-fondo-textura-gris-oscuro_553949-1347.avif);
-    background-size: auto 25%;
-  }
-  
-  /* Fondo para la página de "modelos únicos" */
-  .body-tres {
-    background-image: url(../multimedia/fondo-textura-piedra-granulada-negra-o-fondo-textura-gris-oscuro_553949-1347.avif);
-    background-size: auto 15%;
-  }
-  
-  /* Imágenes de alquiler */
-  @media screen and (min-width: 576px) {
-    .img-fluid {
-      width: 100%;
-      height: 80vh;
-    }
-  }
-  
-  .carousel-uno {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  
-  .carousel-inner {
-    display: flex;
-  }
-  
-  .carousel-item {
-    flex: 0 0 100%;
-  }
-  
-  /* Caja para alquilar auto */
-  .donde-estas {
-    background-color: burlywood;
-    opacity: 0.9;
-    color: black;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: grid;
-    grid-row: auto;
-  }
-  
   .boton-uno {
     color: black;
     background-color: green;
     border: none;
     width: 90px;
-    height: 30px;
+    height: 90px;
   }
-  
-  /* Ventajas */
-  .ventajas {
-    background-color: burlywood;
-  }
-  
-  .respuestas {
-    background-color: burlywood;
-  }
-  
-  /* FAQs */
-  .faq-container {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .faq-item {
-    margin-bottom: 20px;
-  }
-  
-  .question {
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .answer {
-    padding: 10px;
-    background-color: #f5f5f5;
-  }
-  
-  /* Tamaño de las imágenes */
-  .foto-nosotros {
-    width: 100%;
-    height: 90vh;
-  }
-  
-  .nosotros-uno {
-    width: 30vw;
-    height: 200px;
-  }
-  
-  @media screen and (max-width: 576px) {
-    .nosotros-uno {
-      display: grid;
-      grid-row: auto;
-      margin-top: 10px;
-      width: 100%;
-    }
-  }
-  
+}
 
-  /* Estilo para la página "sobre nosotros" */
-  .quienes-somos {
-    color: black;
-    background-color: bisque;
-    opacity: 0.7;
+/* Estilo del nav */
+
+.header {
+  background-color: antiquewhite;
+  color: black;
+  background-color: antiquewhite;
+  opacity: 0.7;
+  width: 100%;
+  margin: 0;
+  border: 0;
+
+  li {
+    display: inline;
   }
-  
-  h3 {
-    background-color: bisque;
-    text-align: center;
-    opacity: 0.7;
-  }
-  
-  .valores-dos {
-    height: 170px;
-    width: 270px;
-  }
-  
-  /* Cuadro de datos para ser parte del staff */
-  .datos {
-    display: block;
-    background-color: bisque;
-    opacity: 0.7;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .datos-uno {
-    margin-top: 20px;
-  }
-  
-  .por-que {
-    display: block;
-    padding-top: 20px;
-  }
-  
-  @media screen and (max-width: 576px) {
-    .datos-uno {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  
-  h4 {
-    text-align: center;
-    background-color: bisque;
-    opacity: 0.7;
-  }
-  
-  /* Estilo de la página "modelos únicos" */
-  .modelos-unicos {
-    margin-bottom: 50px;
-  }
-  
-  .autos-unicos {
-    color: black;
-    background-color: bisque;
-    opacity: 0.8;
-    height: 30px;
-    text-align: center;
-    font-size: 25px;
-  }
-  
-  /* Auto Mustang Eleanor */
-  .autos-unicos {
-    margin-top: 20px;
-    margin-bottom: 15px;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-  }
-  
-  .grid-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .parrafo-unico {
-    margin-top: 10px;
-    background-color: burlywood;
-    opacity: 0.8;
-  }
-  
-  /* Auto Jaguar */
-  .jaguar-grid {
-    width: 100%;
-    height: auto;
-    display: grid;
-  }
-  
-  .jaguar-hijo {
-    width: 100%;
-    height: auto;
-  }
-  
-  .fotos-flex {
-    display: flex;
-  }
-  
-  .foto {
-    max-width: 100%;
-    height: 60vh;
-    display: block;
-  }
-  
-  @media screen and (min-width: 650px) {
-    .img-fluid {
-      display: block;
-    }
-    .foto {
-      width: 100%;
-      height: auto;
-      margin-left: 0;
-      padding-top: 10px;
-    }
-  }
-  
-  /* Aston */
-  .fotos-flex {
+}
+
+.inicio-uno {
+  text-align: center;
+}
+
+.inicio {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding-left: 9px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .cards-container .cards-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  /* Evolución del Miura */
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .top-row,
-  .bottom-row {
-    display: flex;
     justify-content: center;
   }
-  
-  .image-with-text {
-    text-align: center;
+}
+
+.nosotros-flex, .card {
+  max-width: 100%;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+/* Mismo footer para todas las páginas */
+
+.footer {
+  background-color: #f2f2f2;
+  opacity: 0.7;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-items {
+  justify-content: center;
+  align-items: center;
+
+  img.logo {
+    width: 80px;
+    height: 70px;
+  }
+
+  ul.lista-uno {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li.lista-dos {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
     padding: 10px;
   }
-  
-  .text {
+
+  .footer-items {
+    flex-direction: column;
+
+    img.logo {
+      width: 60px;
+      height: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .titulo-responsive {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .titulo-responsive {
+    background-color: antiquewhite;
+    opacity: 70%;
+    color: black;
+  }
+}
+
+/* Fondo del index */
+
+.body-uno {
+  background-image: url(https://i.pinimg.com/564x/a1/7d/78/a17d78b0c6ede6bb4b546da674a19f12.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 769px) {
+  .body-uno {
+    background-image: url(../multimedia/fondo4.avif);
+    background-size: cover;
+  }
+
+  .maps {
+    margin-top: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .maps {
+    display: none;
+  }
+}
+
+/* Estilo de la página "venta" */
+
+.titulo-igual {
+  text-align: center;
+  background-color: antiquewhite;
+  opacity: 0.6;
+  margin: 0;
+  color: black;
+}
+
+/* Foto y texto descriptivo de los autos */
+
+.container {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.item {
+  clear: both;
+  margin-bottom: 15px;
+}
+
+.img {
+  float: left;
+  margin-right: 15px;
+  max-width: 100%;
+}
+
+.text-uno {
+  color: black;
+  font-size: 15px;
+  background-color: white;
+}
+
+@media screen and (max-width: 576x) {
+  .container-flex {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .item-uno {
+    object-fit: cover;
+  }
+}
+
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-uno {
+  width: 100%;
+  float: right;
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+
+.img-uno {
+  width: 100%;
+  display: block;
+  margin-top: 30px;
+}
+
+.text-dos {
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  background-color: white;
+}
+
+@media screen and (max-width: 769px) {
+  .img-dos {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+.item {
+  max-width: 100%;
+}
+
+.img-dos {
+  width: 95vw;
+  height: auto;
+  margin-left: 20px;
+}
+
+.text-cuatro {
+  color: black;
+  background-color: bisque;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.container-dos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-tres {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-cinco {
+  background-color: bisque;
+  text-align: center;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .container-dos {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  .img-tres {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .text-cinco {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.titulo-dos {
+  text-align: center;
+  margin-top: 100px;
+  margin-right: 40%;
+}
+
+/* Cuadro para buscar auto */
+
+.cuadro-auto {
+  width: 100%;
+  display: inline-block;
+  color: black;
+  vertical-align: middle;
+  background-color: bisque;
+  opacity: 0.9;
+}
+
+.estado-auto, .elegi-auto {
+  text-align: center;
+}
+
+/* Mismo h2 para todas las páginas */
+
+h2 {
+  color: black;
+  text-align: center;
+  background-color: bisque;
+  opacity: 0.7;
+}
+
+.vende {
+  color: black;
+  margin-top: 20px;
+}
+
+.vende-uno {
+  color: black;
+  text-align: center;
+}
+
+.vendo {
+  color: black;
+  background-color: antiquewhite;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.titulo-venta {
+  background-color: bisque;
+  opacity: 0.7;
+}
+
+/* Fondo de todas las páginas */
+
+.body-dos {
+  background-image: url(../multimedia/fondo-textura-piedra-granulada-negra-o-fondo-textura-gris-oscuro_553949-1347.avif);
+  background-size: auto 25%;
+}
+
+/* Fondo para la página de "modelos únicos" */
+
+.body-tres {
+  background-image: url(../multimedia/fondo-textura-piedra-granulada-negra-o-fondo-textura-gris-oscuro_553949-1347.avif);
+  background-size: auto 15%;
+}
+
+/* Imágenes de alquiler */
+@media screen and (min-width: 576px) {
+  .img-fluid {
+    width: 100%;
+    height: 80vh;
+  }
+}
+
+.carousel-uno {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  display: flex;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+}
+
+/* Caja para alquilar auto */
+
+.donde-estas {
+  background-color: burlywood;
+  opacity: 0.9;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-row: auto;
+}
+
+.boton-uno {
+  color: black;
+  background-color: green;
+  border: none;
+  width: 90px;
+  height: 30px;
+}
+
+/* Ventajas */
+
+.ventajas, .respuestas {
+  background-color: burlywood;
+}
+
+/* FAQs */
+
+.faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.question {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.answer {
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+/* Tamaño de las imágenes */
+
+.foto-nosotros {
+  width: 100%;
+  height: 90vh;
+}
+
+.nosotros-uno {
+  width: 30vw;
+  height: 200px;
+}
+
+@media screen and (max-width: 576px) {
+  .nosotros-uno {
+    display: grid;
+    grid-row: auto;
     margin-top: 10px;
-    background-color: burlywood;
-    opacity: 0.7;
+    width: 100%;
   }
-  
-  .img-flex {
-    width: 300px;
-    height: 200px;
+}
+
+/* Estilo para la página "sobre nosotros" */
+
+.quienes-somos {
+  color: black;
+  background-color: bisque;
+  opacity: 0.7;
+}
+
+h3 {
+  background-color: bisque;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.valores-dos {
+  height: 170px;
+  width: 270px;
+}
+
+/* Cuadro de datos para ser parte del staff */
+
+.datos {
+  display: block;
+  background-color: bisque;
+  opacity: 0.7;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.datos-uno {
+  margin-top: 20px;
+}
+
+.por-que {
+  display: block;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .datos-uno {
+    display: flex;
+    flex-direction: column;
   }
-  
-  @media screen and (max-width: 576px) {
-    .top-row,
-    .bottom-row {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
+}
+
+h4 {
+  text-align: center;
+  background-color: bisque;
+  opacity: 0.7;
+}
+
+/* Estilo de la página "modelos únicos" */
+
+.modelos-unicos {
+  margin-bottom: 50px;
+}
+
+.autos-unicos {
+  color: black;
+  background-color: bisque;
+  opacity: 0.8;
+  height: 30px;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+/* Auto Mustang Eleanor */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.parrafo-unico {
+  margin-top: 10px;
+  background-color: burlywood;
+  opacity: 0.8;
+}
+
+/* Auto Jaguar */
+
+.jaguar-grid {
+  width: 100%;
+  height: auto;
+  display: grid;
+}
+
+.jaguar-hijo {
+  width: 100%;
+  height: auto;
+}
+
+.fotos-flex {
+  display: flex;
+}
+
+.foto {
+  max-width: 100%;
+  height: 60vh;
+  display: block;
+}
+
+@media screen and (min-width: 650px) {
+  .img-fluid {
+    display: block;
   }
-  
-  /* Sección de subasta */
-  @media screen and (max-width: 576px) {
-    .carousel-img {
-      width: 100%;
-      height: auto;
-    }
+
+  .foto {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    padding-top: 10px;
   }
-  
+}
+
+/* Aston */
+
+.fotos-flex, .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Evolución del Miura */
+
+.top-row, .bottom-row {
+  display: flex;
+  justify-content: center;
+}
+
+.image-with-text {
+  text-align: center;
+  padding: 10px;
+}
+
+.text {
+  margin-top: 10px;
+  background-color: burlywood;
+  opacity: 0.7;
+}
+
+.img-flex {
+  width: 300px;
+  height: 200px;
+}
+
+@media screen and (max-width: 576px) {
+  .top-row, .bottom-row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Sección de subasta */
+@media screen and (max-width: 576px) {
   .carousel-img {
     width: 100%;
-    height: 100vh;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    height: auto;
   }
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
   
