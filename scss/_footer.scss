@@ -59,7 +59,7 @@ $opacidad-hover: 0.8;
       .footer-items {
         flex-direction: column;
 
-        img.logo {
+        &img.logo {
           width: 60px;
           height: 50px;
         }
