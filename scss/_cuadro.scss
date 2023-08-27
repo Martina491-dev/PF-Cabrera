@@ -1,3 +1,21 @@
+$color-fondo: antiquewhite;
+$color-texto: black;
+$tamano-boton: 90px;
+$color-blanco: white;
+$color-negro: black;
+$color-verde: green;
+$color-antiquewhite: antiquewhite;
+$color-bisque: bisque;
+$color-f2f2f2: #f2f2f2;
+$ancho-boton: 90px;
+$alto-boton: 90px;
+$ancho-titulo: 100%;
+$fuente-principal: Arial, sans-serif;
+$tamano-fuente-normal: 16px;
+$tamano-fuente-grande: 20px;
+$opacidad-normal: 0.7;
+$opacidad-hover: 0.8;
+
 .cuadro-auto {
     background-color: $color-blanco;
     opacity: $opacidad-normal;
@@ -11,3 +29,35 @@
       height: $alto-boton;
     }
   }
+
+  /* Cuadro de datos para ser parte del staff */
+
+.datos {
+  display: block;
+  background-color:$color-bisque;
+  opacity: $opacidad-normal;
+  margin-bottom: $tamano-fuente-grande;
+  text-align: center;
+}
+
+.datos-uno {
+  margin-top: 20px;
+}
+
+.por-que {
+  display: block;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .datos-uno {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+h4 {
+  text-align: center;
+  background-color:$color-bisque;
+  opacity:$opacidad-normal;
+}

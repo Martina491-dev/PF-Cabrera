@@ -1,50 +1,68 @@
+$color-fondo: antiquewhite;
+$color-texto: black;
+$tamano-boton: 90px;
+$color-blanco: white;
+$color-negro: black;
+$color-verde: green;
+$color-antiquewhite: antiquewhite;
+$color-bisque: bisque;
+$color-f2f2f2: #f2f2f2;
+$ancho-boton: 90px;
+$alto-boton: 90px;
+$ancho-titulo: 100%;
+$fuente-principal: Arial, sans-serif;
+$tamano-fuente-normal: 16px;
+$tamano-fuente-grande: 20px;
+$opacidad-normal: 0.7;
+$opacidad-hover: 0.8;
+
   /* Mismo footer para todas las páginas */
   .footer {
-    background-color:$color-f2f2f2;
+    background-color: $color-f2f2f2;
     opacity: $opacidad-normal;
     padding: $tamano-fuente-grande;
     text-align: center;
-  }
-  
-  .footer-items {
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footer-items img.logo {
-    width: 80px;
-    height: 70px;
-  }
-  
-  .footer-items ul.lista-uno {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-items li.lista-dos {
-    display: inline-block;
-    margin: 5px;
-  }
-  
-  .footer-items a {
-    text-decoration: none;
-    color:$color-negro;
-  }
-  
-  .footer-items a:hover {
-    text-decoration: underline;
-  }
-  
-  @media screen and (max-width: 576px) {
-    .footer {
-      padding: 10px;
-    }
+
     .footer-items {
-      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img.logo {
+        width: 80px;
+        height: 70px;
+      }
+
+      ul.lista-uno {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li.lista-dos {
+          display: inline-block;
+          margin: 5px;
+
+          a {
+            text-decoration: none;
+            color: $color-negro;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
     }
-    .footer-items img.logo {
-      width: 60px;
-      height: 50px;
+
+    @media screen and (max-width: 576px) {
+      padding: 10px;
+
+      .footer-items {
+        flex-direction: column;
+
+        img.logo {
+          width: 60px;
+          height: 50px;
+        }
+      }
     }
   }

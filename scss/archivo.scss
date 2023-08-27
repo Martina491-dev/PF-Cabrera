@@ -1,135 +1,37 @@
-@charset "UTF-8";
+$color-fondo: antiquewhite;
+$color-texto: black;
+$tamano-boton: 90px;
+$color-blanco: white;
+$color-negro: black;
+$color-verde: green;
+$color-antiquewhite: antiquewhite;
+$color-bisque: bisque;
+$color-f2f2f2: #f2f2f2;
+$ancho-boton: 90px;
+$alto-boton: 90px;
+$ancho-titulo: 100%;
+$fuente-principal: Arial, sans-serif;
+$tamano-fuente-normal: 16px;
+$tamano-fuente-grande: 20px;
+$opacidad-normal: 0.7;
+$opacidad-hover: 0.8;
+
 
 .cuadro-auto {
-  background-color: white;
+  background-color: $color-blanco;
   opacity: 0.9;
-  color: black;
+  color:$color-negro;
 
   .boton-uno {
-    color: black;
-    background-color: green;
+    color: $color-negro;
+    background-color:$color-verde;
     border: none;
     width: 90px;
     height: 90px;
   }
 }
 
-/* Estilo del nav */
 
-.header {
-  color: black;
-  background-color: antiquewhite;
-  opacity: 0.7;
-  width: 100%;
-  margin: 0;
-  border: 0;
-
-  li {
-    display: inline;
-  }
-}
-
-.inicio-uno {
-  text-align: center;
-}
-
-.inicio {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-  padding-left: 9px;
-}
-
-.cards-container {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-@media screen and (max-width: 576px) {
-  .cards-container .cards-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-.nosotros-flex, .card {
-  max-width: 100%;
-  margin-top: 10px;
-  object-fit: cover;
-}
-
-/* Mismo footer para todas las páginas */
-
-.footer {
-  background-color: #f2f2f2;
-  opacity: 0.7;
-  padding: 20px;
-  text-align: center;
-}
-
-.footer-items {
-  justify-content: center;
-  align-items: center;
-
-  img.logo {
-    width: 80px;
-    height: 70px;
-  }
-
-  ul.lista-uno {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  li.lista-dos {
-    display: inline-block;
-    margin: 5px;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .footer {
-    padding: 10px;
-  }
-
-  .footer-items {
-    flex-direction: column;
-
-    img.logo {
-      width: 60px;
-      height: 50px;
-    }
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .titulo-responsive {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 769px) {
-  .titulo-responsive {
-    background-color: antiquewhite;
-    opacity: 70%;
-    color: black;
-  }
-}
 
 /* Fondo del index */
 
@@ -186,9 +88,9 @@
 }
 
 .text-uno {
-  color: black;
-  font-size: 15px;
-  background-color: white;
+  color:$color-negro;
+  font-size: $tamano-fuente-normal;
+  background-color: $color-blanco;
 }
 
 @media screen and (max-width: 576x) {
@@ -222,10 +124,10 @@
 }
 
 .text-dos {
-  color: black;
-  font-size: 15px;
+  color: $color-negro;
+  font-size: $tamano-fuente-normal;
   text-align: center;
-  background-color: white;
+  background-color:$color-blanco;
 }
 
 @media screen and (max-width: 769px) {
@@ -483,38 +385,7 @@ h3 {
   }
 }
 
-/* Cuadro de datos para ser parte del staff */
-
-.datos {
-  display: block;
-  background-color: bisque;
-  opacity: 0.7;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.datos-uno {
-  margin-top: 20px;
-}
-
-.por-que {
-  display: block;
-  padding-top: 20px;
-}
-
-@media screen and (max-width: 576px) {
-  .datos-uno {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-h4 {
-  text-align: center;
-  background-color: bisque;
-  opacity: 0.7;
-}
-
+/
 /* Estilo de la página "modelos únicos" */
 
 .modelos-unicos {
@@ -522,8 +393,8 @@ h4 {
 }
 
 .autos-unicos {
-  color: black;
-  background-color: bisque;
+  color: $color-negro;
+  background-color: $color-bisque;
   opacity: 0.8;
   height: 30px;
   text-align: center;
@@ -549,8 +420,8 @@ h4 {
 
 .parrafo-unico {
   margin-top: 10px;
-  background-color: white;
-  opacity: 0.8;
+  background-color: $color-blanco;
+  opacity:$opacidad-hover;
 }
 
 /* Auto Jaguar */
@@ -611,8 +482,8 @@ h4 {
 
 .text {
   margin-top: 10px;
-  background-color: white;
-  opacity: 0.7;
+  background-color: $color-blanco;
+  opacity: $opacidad-normal;
 }
 
 .img-flex {
@@ -642,4 +513,4 @@ h4 {
   margin-bottom: 10px;
 }
 
-/*# sourceMappingURL=style.css.map */
+

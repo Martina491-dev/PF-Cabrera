@@ -1,24 +1,38 @@
+
+$color-fondo: antiquewhite;
+$color-texto: black;
+$color-blanco: white;
+$color-negro: black;
+$color-antiquewhite: antiquewhite;
+$fuente-principal: Arial, sans-serif;
+$tamano-fuente-normal: 16px;
+$tamano-fuente-grande: 20px;
+$opacidad-normal: 0.7;
+$opacidad-hover: 0.8;
+
 /* Estilo del nav */
 .header {
-	background-color:$color-fondo;
 	color: $color-negro;
+	background-color: $color-antiquewhite;
 	opacity: $opacidad-normal;
 	width: 100%;
 	margin: 0;
 	border: 0;
 	li {
-		display: inline;
+	  display: inline;
 	}
-}
-.inicio-uno {
+  }
+ 
+  .inicio-uno {
 	text-align: center;
-}
-.inicio {
+  }
+  
+  .inicio {
 	text-decoration: none;
-	color: $color-negro;
-	font-size: $tamano-fuente-grande;
+	color:$color-negro;
+	font-size: 20px;
 	padding-left: 9px;
-}
+  }
 
   
   
