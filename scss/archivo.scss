@@ -371,7 +371,7 @@ h3 {
   overflow: hidden;
 }
 
-@media (max-width: 769px) {
+@media screen and (max-width: 769px) {
   .cards-container {
     display: flex;
     flex-direction: column;
