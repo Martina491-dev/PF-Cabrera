@@ -175,7 +175,7 @@
   background-color: white;
 }
 
-@media screen and (max-width: 576x) {
+@media screen and (max-width: 769px) {
   .container-flex {
     display: flex;
     flex-direction: column;
@@ -251,7 +251,7 @@
   padding-left: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 769px) {
   .container-dos {
     display: flex;
     flex-wrap: wrap;
@@ -333,7 +333,7 @@ h2 {
 }
 
 /* Imágenes de alquiler */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 769px) {
   .img-fluid {
     width: 100%;
     height: 80vh;
@@ -413,7 +413,7 @@ h2 {
   height: 200px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 769px) {
   .nosotros-uno {
     display: grid;
     grid-row: auto;
@@ -445,7 +445,7 @@ h3 {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .cards-container {
     display: flex;
     flex-direction: column;
@@ -478,7 +478,7 @@ h3 {
   padding-top: 20px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 769px) {
   .datos-uno {
     display: flex;
     flex-direction: column;
@@ -528,6 +528,7 @@ h4 {
   background-color: white;
   opacity: 0.8;
 }
+
 
 /* Auto Jaguar */
 .jaguar-grid {
