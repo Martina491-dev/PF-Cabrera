@@ -607,7 +607,7 @@ h4 {
   }
 }
 /* Sección de subasta */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 769px) {
   .carousel-img {
     width: 100%;
     height: auto;
