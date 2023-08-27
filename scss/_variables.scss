@@ -22,18 +22,6 @@ $opacidad-hover: 0.8;
 
 
 
-.cuadro-auto {
-  background-color: $color-blanco;
-  opacity: $opacidad-normal;
-  color: $color-negro;
 
-  & .boton-uno {
-    color: $color-negro;
-    background-color: $color-verde;
-    border: none;
-    width: $ancho-boton;
-    height: $alto-boton;
-  }
-}
 
 
