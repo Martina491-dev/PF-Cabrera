@@ -395,7 +395,7 @@ h3 {
 .autos-unicos {
   color: $color-negro;
   background-color: $color-bisque;
-  opacity: 0.8;
+  opacity: $opacidad-hover - 0,1;
   height: 30px;
   text-align: center;
   font-size: 25px;
