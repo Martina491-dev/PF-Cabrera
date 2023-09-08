@@ -1,8 +1,5 @@
 @import "header", "cards", "variables", "cuadro", "footer";
 
-
-
-
 $color-fondo: antiquewhite;
 $color-texto: black;
 $tamano-boton: 90px;
@@ -190,8 +187,7 @@ $opacidad-hover: 0.8;
   }
 
   .text-cinco {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%;    height: auto;
   }
 }
 
@@ -453,16 +449,14 @@ h3 {
   display: block;
 }
 
-@media screen and (min-width: 769px) {
-  .img-fluid {
-    display: block;
-  }
-
+@media screen and (max-width: 769px) {
   .foto {
     width: 100%;
     height: auto;
     margin-left: 0;
     padding-top: 10px;
+    display: grid;
+    grid-template-columns: max-content;
   }
 }
 
@@ -493,17 +487,20 @@ h3 {
 }
 
 .img-flex {
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: auto;
 }
+/*---------MODIFICARRRRRRRRR-----------------------*/
 
 @media screen and (max-width: 769px) {
-  .top-row, .bottom-row {
+  .image-with-text {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 20px;
   }
-}
 
+}
+/*------------MODIFICAR-------------------*/
 /* Sección de subasta */
 @media screen and (max-width: 769px) {
   .carousel-img {
